@@ -62,7 +62,7 @@ export default function Navbar() {
           <div className="hidden md:flex text-center">
             <Link
               href="/pricing"
-              className="bg-accent font-medium  rounded-lg w-50 py-2.5 text-sm text-primary shadow-sm font-medium"
+              className="bg-accent font-medium  rounded-lg w-50 py-2.5 text-sm text-blueText shadow-sm font-medium"
             >
               Free Consultation
             </Link>
@@ -79,7 +79,7 @@ export default function Navbar() {
       {/* Sidebar Overlay */}
       <div
         className={clsx(
-          "fixed inset-0 bg-black/40 transition-opacity duration-300",
+          "fixed inset-0 bg-black/40 z-40 transition-opacity duration-300",
           sidebarOpen ? "opacity-100 visible" : "opacity-0 invisible"
         )}
         onClick={() => setSidebarOpen(false)}
@@ -88,7 +88,7 @@ export default function Navbar() {
       {/* Sidebar Menu */}
       <div
         className={clsx(
-          "fixed top-0 right-0 h-full w-64 bg-blueText shadow-xl transform transition-transform overflow-y-auto duration-300",
+          "fixed top-0 right-0 h-full w-64 bg-blueText shadow-xl transform z-50 transition-transform overflow-y-auto duration-300",
           sidebarOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
@@ -128,13 +128,13 @@ export default function Navbar() {
 
           <Link
             href="/pricing"
-            className="bg-accent font-medium  mt-4 text-center rounded-lg w-full py-2.5 text-xs text-primary shadow-sm font-medium"
+            className="bg-accent font-medium  mt-4 text-center rounded-lg w-full py-2.5 text-xs text-blueText shadow-sm font-medium"
           >
             Free Consultation
           </Link>
           <Link
             href="/pricing"
-            className="bg-secondary font-medium text-center rounded-lg w-full py-2.5 text-xs text-white shadow-sm font-medium"
+            className="bg-primary font-medium text-center rounded-lg w-full py-2.5 text-xs text-white shadow-sm font-medium"
           >
             Get Started
           </Link>
