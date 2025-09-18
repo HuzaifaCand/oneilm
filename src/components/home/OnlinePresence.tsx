@@ -6,7 +6,7 @@ export default function OnlinePresence() {
     <section className="px-4 flex items-center  justify-center py-12">
       <div className=" max-w-5xl mx-auto w-full bg-white border-4 border-accent shadow-sm rounded-2xl text-center px-4 py-20">
         <div className="mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-primary text-2xl sm:text-3xl font-semibold">
+          <h2 className="text-primary text-2xl sm:text-3xl font-bold">
             Why you NEED a strong Online Presence
           </h2>
         </div>

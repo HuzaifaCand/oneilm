@@ -88,7 +88,7 @@ export default function Navbar() {
       {/* Sidebar Menu */}
       <div
         className={clsx(
-          "fixed top-0 right-0 h-full w-64 bg-primary shadow-xl transform transition-transform overflow-y-auto duration-300",
+          "fixed top-0 right-0 h-full w-64 bg-blueText shadow-xl transform transition-transform overflow-y-auto duration-300",
           sidebarOpen ? "translate-x-0" : "translate-x-full"
         )}
       >

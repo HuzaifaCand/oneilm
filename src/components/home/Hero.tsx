@@ -21,7 +21,7 @@ export default function Hero() {
             </Link>
             <Link
               href="/pricing"
-              className="bg-accent font-medium  rounded-lg w-full sm:w-60 py-3 text-sm text-primary shadow-sm font-medium"
+              className="bg-accent font-medium  rounded-lg w-full sm:w-60 py-3 text-sm text-blueText shadow-sm font-medium"
             >
               Free Consultation
             </Link>
