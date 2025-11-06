@@ -20,7 +20,7 @@ export default function Hero() {
               Get Started
             </Link>
             <Link
-              href="/pricing"
+              href="/consultation"
               className="bg-accent font-medium  rounded-lg w-full sm:w-60 py-3 text-sm text-blueText shadow-sm font-medium"
             >
               Free Consultation
