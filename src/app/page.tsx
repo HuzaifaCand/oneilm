@@ -1,17 +1,24 @@
-import Hero from "@/components/home/Hero";
-import OnlinePresence from "@/components/home/OnlinePresence";
-import Navbar from "@/components/Navbar";
 import { Metadata } from "next";
+import Hero from "@/components/Hero";
+import WhatWeBuild from "@/components/WhatWeBuild";
+import TheWork from "@/components/TheWork";
+import WhyItMatters from "@/components/WhyItMatters";
+import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
-  title: "Home | OneIlm",
+  title: "OneIlm | Infrastructure for A-Level Teachers",
+  description:
+    "We build the infrastructure that helps A-level teachers in Pakistan convert their audience into enrolled, paying students — without the admin headache.",
 };
 
 export default function Home() {
   return (
-    <main className="bg-background min-h-screen">
-      <Navbar />
+    <main>
       <Hero />
+      <WhatWeBuild />
+      <TheWork />
+      <WhyItMatters />
+      <Contact />
     </main>
   );
 }
