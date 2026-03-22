@@ -6,7 +6,11 @@ const screenshots = [
   { label: "Teacher Homepage", span: false, mockType: "landing" },
   { label: "Registration Form", span: false, mockType: "form" },
   { label: "Student Dashboard", span: false, mockType: "dashboard" },
-  { label: "Admin Overview — Pipeline & Analytics", span: true, mockType: "analytics" },
+  {
+    label: "Admin Overview — Pipeline & Analytics",
+    span: true,
+    mockType: "analytics",
+  },
   { label: "Payment Tracking", span: false, mockType: "table" },
   { label: "Student Profile", span: false, mockType: "profile" },
 ];
@@ -74,7 +78,10 @@ function MockContent({ type }: { type: string }) {
           </div>
           <div className="grid grid-cols-4 gap-3 mt-2">
             {[1, 2, 3, 4].map((n) => (
-              <div key={n} className="h-10 rounded-md bg-text-faint/8 border border-text-faint/10 p-2">
+              <div
+                key={n}
+                className="h-10 rounded-md bg-text-faint/8 border border-text-faint/10 p-2"
+              >
                 <div className="w-8 h-1.5 rounded bg-text-faint/30 mb-1" />
                 <div className="w-6 h-3 rounded bg-text-faint/20" />
               </div>
@@ -87,7 +94,10 @@ function MockContent({ type }: { type: string }) {
         <div className="p-5 space-y-2">
           <div className="w-1/3 h-3 rounded-full bg-text-faint/30 mb-4" />
           {[1, 2, 3, 4, 5].map((row) => (
-            <div key={row} className="flex gap-4 py-2 border-b border-text-faint/8">
+            <div
+              key={row}
+              className="flex gap-4 py-2 border-b border-text-faint/8"
+            >
               <div className="w-1/4 h-2 rounded bg-text-faint/20" />
               <div className="w-1/3 h-2 rounded bg-text-faint/15" />
               <div className="w-1/6 h-2 rounded bg-accent/20" />
@@ -146,7 +156,7 @@ export default function TheWork() {
               className={`fade-up ${isInView ? "visible" : ""} ${
                 item.span ? "sm:col-span-2" : ""
               } group transition-all duration-500 hover:scale-[1.02]`}
-              style={{ transitionDelay: `${i * 80}ms` }}
+              style={{ transitionDelay: `${i * 120}ms` }}
             >
               {/* Browser chrome wrapper */}
               <div className="rounded-xl border border-border bg-surface overflow-hidden shadow-lg shadow-black/20 transition-shadow duration-500 group-hover:shadow-xl group-hover:shadow-black/30 group-hover:border-accent/20">
