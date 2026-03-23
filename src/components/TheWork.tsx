@@ -1,18 +1,51 @@
 "use client";
 
 import { useInView } from "@/hooks/useInView";
+import Image from "next/image";
 
-const screenshots = [
-  { label: "Teacher Homepage", span: false, mockType: "landing" },
-  { label: "Registration Form", span: false, mockType: "form" },
-  { label: "Student Dashboard", span: false, mockType: "dashboard" },
+type ScreenshotItem = {
+  label: string;
+  span: boolean;
+  mockType: string;
+  imageLink?: string;
+};
+
+//span: false = 1000 x 600 px
+//span: true = 1600 x 600 px to 2000 x 800px
+const screenshots: ScreenshotItem[] = [
   {
-    label: "Admin Overview — Pipeline & Analytics",
+    label: "Teacher Homepage",
+    span: false,
+    mockType: "landing",
+    imageLink: "/work/hero2.png",
+  },
+  {
+    label: "Registrations",
+    span: false,
+    mockType: "form",
+    imageLink: "/work/register.png",
+  },
+  {
+    label: "Student Dashboard",
+    span: false,
+    mockType: "dashboard",
+    imageLink: "/work/student-dashboard.png",
+  },
+  {
+    label: "Admin Dashboard",
     span: true,
     mockType: "analytics",
+    imageLink: "/work/admin-dashboard.png",
   },
-  { label: "Payment Tracking", span: false, mockType: "table" },
+  {
+    label: "Course Management System",
+    span: false,
+    mockType: "dashboard",
+    imageLink: "/work/course-management-system.png",
+  },
   { label: "Student Profile", span: false, mockType: "profile" },
+
+  { label: "Payment Tracking", span: false, mockType: "table" },
 ];
 
 function MockContent({ type }: { type: string }) {
@@ -173,8 +206,19 @@ export default function TheWork() {
                 </div>
 
                 {/* Mock content area */}
-                <div className="min-h-[180px] bg-background-alt/30">
-                  <MockContent type={item.mockType} />
+                <div className="min-h-[180px] bg-background-alt/30 relative">
+                  {item.imageLink ? (
+                    <Image
+                      src={item.imageLink}
+                      alt={item.label}
+                      className="w-full h-auto block"
+                      width={1000}
+                      height={600}
+                      loading="eager"
+                    />
+                  ) : (
+                    <MockContent type={item.mockType} />
+                  )}
                 </div>
               </div>
             </div>
