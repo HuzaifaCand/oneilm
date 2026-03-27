@@ -69,6 +69,25 @@ const cards = [
     ),
   },
   {
+    title: "Automations",
+    description:
+      "Save hours by automating routine administrative tasks and workflows.",
+    icon: (
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+      </svg>
+    ),
+  },
+  {
     title: "Course Management Systems",
     description: "Sell your recorded lectures with your own system.",
     icon: (
@@ -87,6 +106,7 @@ const cards = [
       </svg>
     ),
   },
+
   {
     title: "Custom Builds",
     description: "Tailor-made solutions to fit your exact teaching workflow.",
@@ -103,27 +123,6 @@ const cards = [
       >
         <polyline points="16 18 22 12 16 6" />
         <polyline points="8 6 2 12 8 18" />
-      </svg>
-    ),
-  },
-  {
-    title: "And More...",
-    description:
-      "Everything you need to run your education administration smoothly.",
-    icon: (
-      <svg
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <circle cx="12" cy="12" r="10" />
-        <line x1="12" y1="8" x2="12" y2="16" />
-        <line x1="8" y1="12" x2="16" y2="12" />
       </svg>
     ),
   },
